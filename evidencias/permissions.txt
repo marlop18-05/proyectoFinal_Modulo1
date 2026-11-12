@@ -1,0 +1,44 @@
+
+REGISTRO DE PERMISOS - SEC_GUARD
+================================
+
+Servidor: curso-ammc
+Usuario: becario5
+Directorio: /home/becario5/sec_guard
+
+1. REVISION INICIAL
+
+Al definir la estructura del proyecto solicitada, con ayuda del comando ls -l, permite revisar los permisos de los directorios.
+Inicialmente tenian permisos 755, lo que permitia que otros usuarios pudieran leer y acceder a los directorios, aunque no modificarlos.
+
+Como en el proyecto va a manejar archivos de captura, scripts y resultados,considere conveniente limitar un poco mas estos accesos.
+
+2. CONFIGURACION DE DIRECTORIOS
+
+Decidi utilizar permisos 750 para sec_guard y sus seis subdirectorios, ya que permite conserva los permisos necesarios para trabajar con los archivos,
+mientras que el grupo solo puede leer y acceder.
+
+Pero aqui no otorgue permisos a otros usuarios porque no son necesarios para realizar esta practica.
+
+Comando utilizado:
+chmod 750 . capturas preparados fuentes scripts resultados evidencias
+
+3. ARCHIVOS DE TEXTO
+
+Para los archivos de documentacion, como permissions.txt, elegi permisos 640.
+
+Me parecio suficiente permitir la lectura y escritura al propietario, dejando al grupo solamente la posibilidad de consultar el contenido.
+
+Los archivos de texto no necesitan permiso de ejecucion, ya que solo almacenan informacion.
+
+Comando utilizado:
+chmod 640 evidencias/permissions.txt
+
+4. SCRIPTS DEL PROYECTO
+
+Para los scripts que se desarrollen posteriormente,
+tengo pensado utilizar permisos 750.
+
+A diferencia de los archivos de texto, estos necesitaran permiso de ejecucion para poder iniciarlos directamente desde la terminal.
+
+Esta configuracion tambien evita que el grupo pueda modificar su contenido.

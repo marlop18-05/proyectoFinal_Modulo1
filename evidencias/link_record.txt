@@ -1,0 +1,54 @@
+REGISTRO DE ENLACES - SEC_GUARD
+================================
+
+1. ENLACE DURO
+  File: evidencias/pruebas/hardlink.txt
+  Size: 116       	Blocks: 8          IO Block: 4096   regular file
+Device: 252,4	Inode: 25983309    Links: 2
+Access: (0640/-rw-r-----)  Uid: ( 1012/becario5)   Gid: ( 1012/becario5)
+Access: 2026-11-12 21:21:50.060173816 +0000
+Modify: 2026-11-12 21:14:18.977537262 +0000
+Change: 2026-11-12 21:21:25.799977505 +0000
+ Birth: 2026-11-12 21:14:18.974537238 +0000
+
+2. ARCHIVO RENOMBRADO
+  File: evidencias/pruebas/prueba_renombrada.txt
+  Size: 116       	Blocks: 8          IO Block: 4096   regular file
+Device: 252,4	Inode: 25983309    Links: 2
+Access: (0640/-rw-r-----)  Uid: ( 1012/becario5)   Gid: ( 1012/becario5)
+Access: 2026-11-12 21:21:50.060173816 +0000
+Modify: 2026-11-12 21:14:18.977537262 +0000
+Change: 2026-11-12 21:21:25.799977505 +0000
+ Birth: 2026-11-12 21:14:18.974537238 +0000
+
+3. ENLACE SIMBOLICO
+  File: acceso_prueba -> evidencias/pruebas/
+  Size: 19        	Blocks: 0          IO Block: 4096   symbolic link
+Device: 252,4	Inode: 42348922    Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: ( 1012/becario5)   Gid: ( 1012/becario5)
+Access: 2026-11-12 21:15:29.395104828 +0000
+Modify: 2026-11-12 21:15:01.000875972 +0000
+Change: 2026-11-12 21:15:01.000875972 +0000
+ Birth: 2026-11-12 21:15:01.000875972 +0000
+
+
+4. OBSERVACIONES DE LA PRUEBA
+
+Para esta parte del proyecto utilice un archivo con informacion del sistema, generado mediante el comando uname -a.
+
+Primero cree un enlace duro llamado hardlink.txt y revise los inodos de ambos archivos con ls -li.
+
+En la comparacion encontre que los dos tenian el inodo 25983309 y el mismo tamaño de 116 bytes.
+
+Despues cambie el nombre de prueba_doc.txt a prueba_renombrada.txt. Al consultar nuevamente hardlink.txt, observe que seguia mostrando la informacion del sistema sin ningun problema.
+
+Esto me permitio comprobar que el enlace duro no depende del nombre original del archivo,ya que ambos nombres hacen referencia al mismo inodo.
+
+Tambien cree el enlace simbolico acceso_prueba, que apunta al directorio evidencias/pruebas/.
+
+En este caso, el enlace funciona como una ruta alternativa para consultar los archivos sin necesidad de duplicar el directorio.
+
+Finalmente utilice stat para revisar los metadatos de los archivos, principalmente sus permisos, propietario, tamaño, inodo y fechas.
+
+Con esta prueba pude distinguir que los enlaces duros comparten el mismo inodo, mientras que los simbolicos almacenan una ruta de acceso.
+

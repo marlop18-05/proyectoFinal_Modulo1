@@ -12,10 +12,10 @@ Alertas: 0
 
 CATEGORIA: PROCESOS
 Cantidad: 3
-Suma: 27
-Minimo: 9
-Maximo: 9
-Promedio: 9.00
+Suma: 30
+Minimo: 10
+Maximo: 10
+Promedio: 10.00
 Alertas: 0
 
 CATEGORIA: PERMISOS

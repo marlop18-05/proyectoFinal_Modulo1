@@ -1,13 +1,13 @@
 ADMINISTRACION DE PROCESO
-Fecha: Fri Nov 13 12:58:37 PM UTC 2026
+Fecha: Fri Nov 13 04:54:18 PM UTC 2026
 Usuario: becario5
 Proceso: sleep 300
-PID: 1455623
+PID: 1511261
 Senal STOP enviada
     PID STAT COMMAND
-1455623 T+   bash
+1511261 T+   sleep
 Senal CONT enviada
     PID STAT COMMAND
-1455623 S+   sleep
+1511261 S+   sleep
 Senal TERM enviada
 Proceso terminado

@@ -1,0 +1,6 @@
+# Archivos compilados y temporales
+fuentes/sec_engine
+capturas/extraidos/
+*.o
+*.tmp
+*.bak

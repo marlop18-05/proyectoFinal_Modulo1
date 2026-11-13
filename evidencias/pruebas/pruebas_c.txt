@@ -1,0 +1,132 @@
+Ejemplo de 9 registros | esperado: correcto | codigo: 0 | BIEN
+Informe generado: /tmp/tmp.FQO6KFd3PK/informe.txt
+INFORME DE SEGURIDAD - SEC_GUARD
+Etiqueta: AuditoriaCursoC
+Total de mediciones: 9
+
+CATEGORIA: DISCO
+Cantidad: 3
+Suma: 222
+Minimo: 62
+Maximo: 82
+Promedio: 74.00
+Alertas: 1
+
+CATEGORIA: PROCESOS
+Cantidad: 3
+Suma: 29
+Minimo: 8
+Maximo: 11
+Promedio: 9.67
+Alertas: 0
+
+CATEGORIA: PERMISOS
+Cantidad: 3
+Suma: 1
+Minimo: 0
+Maximo: 1
+Promedio: 0.33
+Alertas: 1
+
+TOTAL DE ALERTAS: 2
+---------------------
+Valores frontera | esperado: correcto | codigo: 0 | BIEN
+Informe generado: /tmp/tmp.FQO6KFd3PK/informe.txt
+INFORME DE SEGURIDAD - SEC_GUARD
+Etiqueta: AuditoriaCursoC
+Total de mediciones: 6
+
+CATEGORIA: DISCO
+Cantidad: 2
+Suma: 100
+Minimo: 0
+Maximo: 100
+Promedio: 50.00
+Alertas: 1
+
+CATEGORIA: PROCESOS
+Cantidad: 2
+Suma: 2000
+Minimo: 0
+Maximo: 2000
+Promedio: 1000.00
+Alertas: 1
+
+CATEGORIA: PERMISOS
+Cantidad: 2
+Suma: 200
+Minimo: 0
+Maximo: 200
+Promedio: 100.00
+Alertas: 1
+
+TOTAL DE ALERTAS: 3
+---------------------
+Categoria sin observaciones | esperado: correcto | codigo: 0 | BIEN
+Informe generado: /tmp/tmp.FQO6KFd3PK/informe.txt
+INFORME DE SEGURIDAD - SEC_GUARD
+Etiqueta: AuditoriaCursoC
+Total de mediciones: 2
+
+CATEGORIA: DISCO
+Cantidad: 1
+Suma: 50
+Minimo: 50
+Maximo: 50
+Promedio: 50.00
+Alertas: 0
+
+CATEGORIA: PROCESOS
+Cantidad: 1
+Suma: 10
+Minimo: 10
+Maximo: 10
+Promedio: 10.00
+Alertas: 0
+
+CATEGORIA: PERMISOS
+Cantidad: 0
+Sin datos
+Alertas: 0
+
+TOTAL DE ALERTAS: 0
+---------------------
+Cero registros | esperado: correcto | codigo: 0 | BIEN
+Informe generado: /tmp/tmp.FQO6KFd3PK/informe.txt
+INFORME DE SEGURIDAD - SEC_GUARD
+Etiqueta: AuditoriaCursoC
+Total de mediciones: 0
+
+CATEGORIA: DISCO
+Cantidad: 0
+Sin datos
+Alertas: 0
+
+CATEGORIA: PROCESOS
+Cantidad: 0
+Sin datos
+Alertas: 0
+
+CATEGORIA: PERMISOS
+Cantidad: 0
+Sin datos
+Alertas: 0
+
+TOTAL DE ALERTAS: 0
+---------------------
+Valor fuera de rango | esperado: error | codigo: 1 | BIEN
+Error: valor fuera de rango: DISCO 101
+---------------------
+Categoria desconocida | esperado: error | codigo: 1 | BIEN
+Error: categoria desconocida: OTRA
+---------------------
+Cabecera mayor que datos | esperado: error | codigo: 1 | BIEN
+Error: faltan registros o hay datos incorrectos.
+---------------------
+Cabecera menor que datos | esperado: error | codigo: 1 | BIEN
+Error: registros adicionales o lectura fallida.
+---------------------
+Registro adicional | esperado: error | codigo: 1 | BIEN
+Error: registros adicionales o lectura fallida.
+---------------------
+Archivo inexistente | BIEN

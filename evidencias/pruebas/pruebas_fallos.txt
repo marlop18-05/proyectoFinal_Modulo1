@@ -1,0 +1,22 @@
+PRUEBA: Paquete tar corrupto
+INICIO DEL PROYECTO SEC_GUARD
+Error: paquete ausente o danado
+BIEN: se detuvo y no quedo informe
+PRUEBA: Sin permiso de ejecucion en capturar.sh
+INICIO DEL PROYECTO SEC_GUARD
+Paquete verificado y extraido.
+Archivos de auditoria preparados.
+./ejecutar.sh: line 29: ./scripts/capturar.sh: Permission denied
+BIEN: se detuvo y no quedo informe
+PRUEBA: Error de compilacion en C
+INICIO DEL PROYECTO SEC_GUARD
+Paquete verificado y extraido.
+Archivos de auditoria preparados.
+Captura registrada: 2026-11-13_16:54:09
+Captura registrada: 2026-11-13_16:54:10
+Captura registrada: 2026-11-13_16:54:11
+Mediciones normalizadas: 9
+fuentes/sec_engine.c:159:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ at end of input
+  159 | esto_no_es_codigo_c
+      | ^~~~~~~~~~~~~~~~~~~
+BIEN: se detuvo y no quedo informe

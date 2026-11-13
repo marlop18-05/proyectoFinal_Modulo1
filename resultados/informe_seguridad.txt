@@ -1,0 +1,29 @@
+INFORME DE SEGURIDAD - SEC_GUARD
+Etiqueta: AuditoriaCursoC
+Total de mediciones: 9
+
+CATEGORIA: DISCO
+Cantidad: 3
+Suma: 108
+Minimo: 36
+Maximo: 36
+Promedio: 36.00
+Alertas: 0
+
+CATEGORIA: PROCESOS
+Cantidad: 3
+Suma: 27
+Minimo: 9
+Maximo: 9
+Promedio: 9.00
+Alertas: 0
+
+CATEGORIA: PERMISOS
+Cantidad: 3
+Suma: 0
+Minimo: 0
+Maximo: 0
+Promedio: 0.00
+Alertas: 0
+
+TOTAL DE ALERTAS: 0
